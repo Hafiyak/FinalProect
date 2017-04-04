@@ -52,7 +52,7 @@ public class AbstractDAOImpl implements AbstractDAO {
 
     @Override
     public Room generateRoom(int hotelID) {
-        double price = random.nextInt(2500);
+        double price = random.nextInt(250);
         return new Room(++roomId, random.nextInt((4 - 1) + 1) + 1,
                 price, hotelID,
                 random.nextBoolean(),
@@ -79,7 +79,7 @@ public class AbstractDAOImpl implements AbstractDAO {
     Hotel hotel2 = new Hotel(2, "Mama", "Odesa", roomsHotel2, 4);
     Hotel hotel3 = new Hotel(3, "LevLev", "Lviv", roomsHotel3, 3);
     Hotel hotel4 = new Hotel(4, "Shachta", "Doneck", roomsHotel4, 4);
-    Hotel hotel5 = new Hotel(5, "VienoHrad", "Krim", roomsHotel5, 4);
+    Hotel hotel5 = new Hotel(5, "Radisson", "Kiev", roomsHotel5, 4);
 
     @Override
     public void addHotels() {

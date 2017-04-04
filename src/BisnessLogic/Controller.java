@@ -179,7 +179,7 @@ public class Controller {
         }
         if (!foundedHotels.isEmpty()) {
             System.out.println("List of hotels available in " + city + ":");
-            foundedHotels.forEach(c -> System.out.println(starCount(c.getStars()) + "Hotel" + c.getHotelName() + c.getHotelName() + "'" + " /" + c.getStars() + " stars" + "/"));
+            foundedHotels.forEach(c -> System.out.println(starCount(c.getStars()) + "Hotel" + c.getHotelName()  + "'" + " /" + c.getStars() + " stars" + "/"));
             System.out.println("Please, press ENTER to show all rooms in city...");
             String enterKey = scanner.nextLine();
             System.out.println();
@@ -294,10 +294,10 @@ public class Controller {
             selection = scanner.nextLine();
         }
         switch (selection) {
-            case "c":
+            case "C":
                 cancelReservation(roomId, userId, hotelId, isLoggedIn);
-            case "e":
-                System.out.println(goodByeScreen);
+            case "E":
+                System.out.println(goodByeScreen );
                 System.exit(0);
         }
     }
